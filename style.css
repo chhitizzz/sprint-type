@@ -13,5 +13,10 @@ body {
 }
 
 h1 {
-    color: var(--primaryColor)
+    color: var(--primaryColor);
+}
+
+h1 svg {
+    width: 40px;
+    fill: #ffffff;
 }
