@@ -13,10 +13,12 @@ body {
 }
 
 h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
     color: var(--primaryColor);
 }
 
 h1 svg {
     width: 40px;
-    fill: #ffffff;
+    fill: var(--primaryColor);
 }
