@@ -18,7 +18,7 @@ h1 {
     color: var(--primaryColor);
 }
 
-h1 img {
+h1 svg {
     padding-left: 2cm;
     width: 40px;
     fill: var(--primaryColor);
