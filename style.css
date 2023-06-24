@@ -20,6 +20,6 @@ h1 {
 
 h1 svg {
     padding-left: 2cm;
-    width: 40px;
+    width: 30px;
     fill: var(--primaryColor);
 }
