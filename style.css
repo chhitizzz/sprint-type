@@ -2,9 +2,9 @@
 
 :root {
     --bgColor: #1c1e26;
-    --textPrimary: #bbb;
-    --textSeconday: #666;
     --primaryColor: #c4a88a;
+    --textPrimary: #db886f;
+    --textSeconday: #666;
 }
 
 body {
@@ -49,6 +49,7 @@ button {
 }
 
 div#game {
+    color: var(--textPrimary);
     line-height: 35px;
     height: 105px;
     overflow: hidden;
