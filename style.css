@@ -45,8 +45,7 @@ button {
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
-    color: var(--textPrimary);
-
+    color: var(--textSeconday);
 }
 
 div#game {
@@ -66,11 +65,12 @@ div#game {
 }
 
 #focus-error {
+    font-size: larger;
     position: absolute;
     inset: 0;
     text-align: center;
     padding-top: 35px;
-    color: var(--textPrimary);
+    color: var(--textSeconday);
 }
 
 #game:focus #focus-error{
