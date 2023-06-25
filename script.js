@@ -1,4 +1,4 @@
-const words = 'ten forgive consider smoke descriptive vanish faulty bee wakeful induce send look marriage amount unbecoming'.split(' ');
+const words = 'ten forgive consider smoke descriptive vanish faulty bee wakeful induce send look marriage amount unbecoming plot room knife instruct haircut badge doubt position omen meddle mountain stone interest overwatch talented brake cake hair jump announce deadlock deafening temporary somber cobweb stem thick trucks remind zippy'.split(' ');
 const wordsCount = words.length;
 
 function randomWord() {
