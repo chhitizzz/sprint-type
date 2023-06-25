@@ -63,6 +63,8 @@ div#game {
 #focus-error {
     position: absolute;
     inset: 0;
+    text-align: center;
+    padding-top: 35px;
 }
 
 div.word {
