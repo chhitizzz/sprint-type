@@ -4,7 +4,7 @@
     --bgColor: #1c1e26;
     --primaryColor: #c4a88a;
     --textPrimary: #db886f;
-    --textSeconday: #666;
+    --textSeconday: #fff;
 }
 
 body {
@@ -40,12 +40,13 @@ h1 svg {
 }
 
 button {
-    background: rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .5);
     border: 0;
-    color: rgba(255, 255, 255, .5);
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+    color: var(--textPrimary);
+
 }
 
 div#game {
