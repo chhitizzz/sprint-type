@@ -49,7 +49,6 @@ button {
 }
 
 div#game {
-    color: var(--textPrimary);
     line-height: 35px;
     height: 105px;
     overflow: hidden;
@@ -58,6 +57,11 @@ div#game {
 
 #words {
     filter: blur(5px);
+    color: var(--textPrimary);
+}
+
+#game:focus #words {
+    filter: blur(0);
 }
 
 #focus-error {
@@ -65,6 +69,11 @@ div#game {
     inset: 0;
     text-align: center;
     padding-top: 35px;
+    color: var(--textPrimary);
+}
+
+#game:focus #focus-error{
+    display: none;
 }
 
 div.word {
