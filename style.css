@@ -83,3 +83,11 @@ div.word {
     margin:0 5px;
 
 }
+
+.letter.correct {
+    color: #fff;
+}
+
+.letter.incorrect{
+    color: #f55;
+}
