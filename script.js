@@ -21,4 +21,8 @@ function newGame() {
     }
 }
 
+document.getElementById('game').addEventListener('keyup', ev => {
+    console.log(ev);
+})
+
 newGame();
