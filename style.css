@@ -93,6 +93,20 @@ div.word {
     color: #f55;
 }
 
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 #cursor {
     width: 2px;
     height: 1.5rem;
@@ -100,4 +114,5 @@ div.word {
     position: fixed;
     top: 193px;
     left: 12px;
+    animation: blink .2s infinite;
 }
