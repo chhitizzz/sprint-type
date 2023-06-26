@@ -33,7 +33,8 @@ function newGame() {
 
 document.getElementById('game').addEventListener('keyup', ev => {
     const key = ev.key;
-    
+    const currentLetter = document.querySelector('.letter.current');
+    const expected = currentLetter.innerHTML;
 })
 
 newGame();
