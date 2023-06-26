@@ -5,6 +5,7 @@
     --primaryColor: #c4a88a;
     --textPrimary: #db886f;
     --textSeconday: #fff;
+    --cursorColor: #bbb;
 }
 
 body {
@@ -90,4 +91,13 @@ div.word {
 
 .letter.incorrect{
     color: #f55;
+}
+
+#cursor {
+    width: 2px;
+    height: 1.5rem;
+    background: var(--cursorColor);
+    position: fixed;
+    top: 80px;
+    left: 40px;
 }
