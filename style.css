@@ -108,6 +108,7 @@ div.word {
 }
 
 #cursor {
+    display: none;
     width: 2px;
     height: 1.5rem;
     background: var(--cursorColor);
@@ -115,4 +116,8 @@ div.word {
     top: 193px;
     left: 12px;
     animation: blink .2s infinite;
+}
+
+#game:focus #cursor{
+    display: block;
 }
