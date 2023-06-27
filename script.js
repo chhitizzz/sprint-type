@@ -29,6 +29,7 @@ function newGame() {
 
 document.getElementById('game').addEventListener('keyup', ev => {
     const key = ev.key;
+    const currentWord = document.querySelector('.word.current');
     const currentLetter = document.querySelector('.letter.current');
     const expected = currentLetter.innerHTML;
     const isLetter = key.length === 1 && key !== ' ';
@@ -49,8 +50,11 @@ document.getElementById('game').addEventListener('keyup', ev => {
             const lettersToInvalidate = [...document.querySelectorAll('.word.current .letter:not(.correct)')]
             lettersToInvalidate.forEach(letter => {
                 addClass(letter, 'incorrect');
-            })
+            });
         }
+        removeClass(currentWord, 'current');
+        addClass(currentWord.nextSibling, 'current');
+        if(currentLetter){}
     }
 })
 
