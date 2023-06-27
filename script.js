@@ -32,6 +32,12 @@ document.getElementById('game').addEventListener('keyup', ev => {
     const currentLetter = document.querySelector('.letter.current');
     const expected = currentLetter.innerHTML;
     const isLetter = key.length === 1 && key !== ' ';
+
+    if(isLetter) {
+        if (currentLetter) {
+            alert(key === expected ? 'ok' : 'wrong');
+        }
+    }
 })
 
 newGame();
