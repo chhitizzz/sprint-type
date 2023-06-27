@@ -33,6 +33,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
     const expected = currentLetter.innerHTML;
     const isLetter = key.length === 1 && key !== ' ';
 
+    console.log({key,expected});
+
     if(isLetter) {
         if (currentLetter) {
             addClass(currentLetter, key === expected ? 'correct' : 'incorrect');
