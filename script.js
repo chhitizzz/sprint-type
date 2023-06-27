@@ -31,7 +31,7 @@ document.getElementById('game').addEventListener('keyup', ev => {
     const key = ev.key;
     const currentWord = document.querySelector('.word.current');
     const currentLetter = document.querySelector('.letter.current');
-    const expected = currentLetter.innerHTML;
+    const expected = currentLetter?.innerHTML || ' ';
     const isLetter = key.length === 1 && key !== ' ';
     const isSpace = key === ' ';
 
