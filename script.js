@@ -54,7 +54,10 @@ document.getElementById('game').addEventListener('keyup', ev => {
         }
         removeClass(currentWord, 'current');
         addClass(currentWord.nextSibling, 'current');
-        if(currentLetter){}
+        if(currentLetter){
+            removeClass(currentLetter, 'current');
+        }
+        addClass(currentWord.nextSibling.firstChild,'current');
     }
 })
 
