@@ -38,6 +38,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
     if(isLetter) {
         if (currentLetter) {
             addClass(currentLetter, key === expected ? 'correct' : 'incorrect');
+            removeClass(currentLetter, 'current');
+            addClass(currentLetter.nextSibling, 'current');
         }
     }
 })
