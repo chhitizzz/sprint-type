@@ -11,7 +11,7 @@ function removeClass(el, name){
 
 function randomWord() {
     const randomIndex =  Math.ceil(Math.random() * wordsCount);
-    return words[randomIndex];
+    return words[randomIndex - 1];
 }
 
 function formatWord(word) {
