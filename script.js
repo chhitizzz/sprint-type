@@ -67,7 +67,10 @@ document.getElementById('game').addEventListener('keyup', ev => {
         addClass(currentWord.nextSibling.firstChild,'current');
     }
 
-    const nextLetter = 
+    const nextLetter = document.querySelector('.letter.current');
+    if (nextLetter) {
+        
+    }
 })
 
 newGame();
