@@ -68,10 +68,15 @@ document.getElementById('game').addEventListener('keyup', ev => {
     }
 
     const nextLetter = document.querySelector('.letter.current');
+    const nextWord = document.querySelector('.word.current');
     const cursor = document.getElementById('cursor');
+
     if (nextLetter) {
         cursor.style.top = nextLetter.getBoundingClientRect().top + 2 + 'px';
         cursor.style.left = nextLetter.getBoundingClientRect().left + 'px';
+    } else {
+        cursor.style.top = nextLetter.getBoundingClientRect().top + 2 + 'px';
+        cursor.style.left = nextLetter.getBoundingClientRect().right + 'px';
     }
 })
 
