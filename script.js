@@ -44,6 +44,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
             if (currentLetter.nextSibling){
                 addClass(currentLetter.nextSibling, 'current');
             }
+        } else {
+            
         }
     }
 
