@@ -75,8 +75,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
         cursor.style.top = nextLetter.getBoundingClientRect().top + 2 + 'px';
         cursor.style.left = nextLetter.getBoundingClientRect().left + 'px';
     } else {
-        cursor.style.top = nextLetter.getBoundingClientRect().top + 2 + 'px';
-        cursor.style.left = nextLetter.getBoundingClientRect().right + 'px';
+        cursor.style.top = nextWord.getBoundingClientRect().top + 2 + 'px';
+        cursor.style.left = nextWord.getBoundingClientRect().right + 'px';
     }
 })
 
