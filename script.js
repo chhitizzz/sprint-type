@@ -66,6 +66,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
         }
         addClass(currentWord.nextSibling.firstChild,'current');
     }
+
+    const nextLetter = 
 })
 
 newGame();
