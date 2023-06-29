@@ -35,6 +35,7 @@ document.getElementById('game').addEventListener('keyup', ev => {
     const isLetter = key.length === 1 && key !== ' ';
     const isSpace = key === ' ';
     const isBackspace = key === 'Backspace';
+    const isFirstLetter = currentLetter === currentWord.firstChild;
 
     console.log({key,expected});
 
@@ -69,7 +70,9 @@ document.getElementById('game').addEventListener('keyup', ev => {
     }
 
     if (isBackspace) {
-        
+        if (currentLetter && isFirstLetter){
+            
+        }
     }
 
     const nextLetter = document.querySelector('.letter.current');
