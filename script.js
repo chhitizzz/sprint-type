@@ -71,7 +71,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
 
     if (isBackspace) {
         if (currentLetter && isFirstLetter){
-            
+            removeClass(currentWord, 'current');
+            addClass(currentLetter.previousSibling, 'current');
         }
     }
 
