@@ -93,7 +93,6 @@ document.getElementById('game').addEventListener('keyup', ev => {
         }
     }
 
-
     const nextLetter = document.querySelector('.letter.current');
     const nextWord = document.querySelector('.word.current');
     const cursor = document.getElementById('cursor');
