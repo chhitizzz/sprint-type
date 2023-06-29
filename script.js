@@ -81,7 +81,10 @@ document.getElementById('game').addEventListener('keyup', ev => {
     }
 
     if (currentLetter && !isFirstLetter) {
-        
+        removeClass(currentLetter, 'current');
+        addClass(currentLetter.previousSibling, 'current');
+        removeClass(currentLetter.previousSibling, 'incorrect');
+        removeClass(currentLetter.previousSibling, 'correct');
     } 
 
 
