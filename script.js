@@ -73,6 +73,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
         if (currentLetter && isFirstLetter){
             removeClass(currentWord, 'current');
             addClass(currentLetter.previousSibling, 'current');
+            removeClass(currentLetter, 'current');
+            addClass(currentWord.previousSibling.lastChild, 'current');
         }
     }
 
