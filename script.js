@@ -72,7 +72,7 @@ document.getElementById('game').addEventListener('keyup', ev => {
     if (isBackspace) {
         if (currentLetter && isFirstLetter){
             removeClass(currentWord, 'current');
-            addClass(currentLetter.previousSibling, 'current');
+            addClass(currentWord.previousSibling, 'current');
             removeClass(currentLetter, 'current');
             addClass(currentWord.previousSibling.lastChild, 'current');
         }
