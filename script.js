@@ -34,6 +34,7 @@ document.getElementById('game').addEventListener('keyup', ev => {
     const expected = currentLetter?.innerHTML || ' ';
     const isLetter = key.length === 1 && key !== ' ';
     const isSpace = key === ' ';
+    const isBackspace = key === 'Backspace';
 
     console.log({key,expected});
 
@@ -65,6 +66,10 @@ document.getElementById('game').addEventListener('keyup', ev => {
             removeClass(currentLetter, 'current');
         }
         addClass(currentWord.nextSibling.firstChild,'current');
+    }
+
+    if (isBackspace) {
+        
     }
 
     const nextLetter = document.querySelector('.letter.current');
