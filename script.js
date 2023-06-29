@@ -88,6 +88,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
 
         if (!currentLetter) {
             addClass(currentWord.lastChild, 'current');
+            removeClass(currentWord.lastChild, 'incorrect');
+            removeClass(currentWord.lastChild, 'correct');
         }
     }
 
