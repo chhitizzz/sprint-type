@@ -43,6 +43,7 @@ document.getElementById('game').addEventListener('keyup', ev => {
     console.log({key,expected});
 
     if (!window.timer && isLetter) {
+        window.timer = setInterval(() => {}, 1000);
         alert('start timer');
     }
 
