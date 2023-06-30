@@ -92,9 +92,9 @@ document.getElementById('game').addEventListener('keyup', ev => {
             removeClass(currentWord.lastChild, 'correct');
         }
     }
-
-    if (currentWord.getBoundingClientRect().top > 200) {
-        alert('move!');
+    if (currentWord.getBoundingClientRect().top > 260) {
+        const words = document.getElementById('words');
+        words.style.marginTop = '-35px';
     }
 
 
