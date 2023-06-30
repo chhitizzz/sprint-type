@@ -31,6 +31,10 @@ function newGame() {
     window.timer = null;
 }
 
+function gameOver() {
+    clearInterval(window.timer);
+}
+
 document.getElementById('game').addEventListener('keyup', ev => {
     const key = ev.key;
     const currentWord = document.querySelector('.word.current');
@@ -52,6 +56,11 @@ document.getElementById('game').addEventListener('keyup', ev => {
             const msPassed = currentTime - window.gameStart;
             const sPassed = Math.round(msPassed / 1000);
             const sLeft = (gameTime / 1000) - sPassed;
+            
+            if (sLeft <= 0) {
+                gameOver();
+            }
+
             document.getElementById('info').innerHTML = sLeft + '';
         }, 1000);
     }
