@@ -94,7 +94,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
     }
     if (currentWord.getBoundingClientRect().top > 260) {
         const words = document.getElementById('words');
-        words.style.marginTop = '-35px';
+        const margin = parseInt(words.style.marginTop || '0px');
+        words.style.marginTop = (margin - 35) + 'px';
     }
 
 
