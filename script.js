@@ -1,5 +1,7 @@
 const words = 'ten eleven neeva nivia chhitiz subhu bijaya merina sabina manchester united mamba marriage amount unbecoming plot room knife instruct haircut badge doubt position omen meddle mountain stone interest overwatch talented brake cake hair jump announce deadlock deafening temporary somber cobweb stem thick trucks remind zippy bedroom doubtful sock disagree cabbage brother gentle political tense tub mundane light drag lock deeply history language stupid lumpy toothsome imagine sable roll lunch damp decide bushes desire knife thaw knowledgeable skirt heartbreaking agreement roasted shy harass pinch bizarre load hospitable awesome passenger steel wonder middle shave accurate want nippy'.split(' ');
 const wordsCount = words.length;
+const gameTime = 30 * 1000;
+window.timer = null;
 
 function addClass(el, name){
     el.className += ' '+name;
@@ -25,6 +27,7 @@ function newGame() {
     }
     addClass(document.querySelector('.word'), 'current');
     addClass(document.querySelector('.letter'), 'current');
+    window.timer = null;
 }
 
 document.getElementById('game').addEventListener('keyup', ev => {
