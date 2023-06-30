@@ -48,6 +48,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
             if (!window.gameStart) {
                 window.gameStart = (new Date().getTime());
             }
+            const currentTime = (new Date().getTime());
+            const msPassed = currentTime - window.gameStart;
         }, 1000);
     }
 
