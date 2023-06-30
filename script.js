@@ -2,6 +2,7 @@ const words = 'ten eleven neeva nivia chhitiz subhu bijaya merina sabina manches
 const wordsCount = words.length;
 const gameTime = 30 * 1000;
 window.timer = null;
+window.gameStart = null;
 
 function addClass(el, name){
     el.className += ' '+name;
@@ -43,8 +44,11 @@ document.getElementById('game').addEventListener('keyup', ev => {
     console.log({key,expected});
 
     if (!window.timer && isLetter) {
-        window.timer = setInterval(() => {}, 1000);
-        alert('start timer');
+        window.timer = setInterval(() => {
+            if (!window.gameStart) {
+                window.gameStart = (new Date().getTime());
+            }
+        }, 1000);
     }
 
 
