@@ -51,7 +51,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
             const currentTime = (new Date().getTime());
             const msPassed = currentTime - window.gameStart;
             const sPassed = Math.round(msPassed / 1000);
-            document.getElementById('info').innerHTML = sPassed + '';
+            const sLeft = (gameTime / 1000) - sPassed;
+            document.getElementById('info').innerHTML = sLeft + '';
         }, 1000);
     }
 
