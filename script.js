@@ -50,6 +50,8 @@ document.getElementById('game').addEventListener('keyup', ev => {
             }
             const currentTime = (new Date().getTime());
             const msPassed = currentTime - window.gameStart;
+            const sPassed = Math.round(msPassed / 1000);
+            document.getElementById('info').innerHTML = sPassed + '';
         }, 1000);
     }
 
