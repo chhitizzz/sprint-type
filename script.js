@@ -34,6 +34,8 @@ function newGame() {
 function getWpm(){
     const words = [...document.querySelectorAll('.word')];
     const lastTypedWord = document.querySelector('.word.current');
+    const lastTypedWordIndex = words.indexOf(lastTypedWord);
+    const typedWords = words.slice(0, lastTypedWordIndex);
     return 23;
 }
 
