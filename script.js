@@ -46,6 +46,10 @@ document.getElementById('game').addEventListener('keyup', ev => {
     const isBackspace = key === 'Backspace';
     const isFirstLetter = currentLetter === currentWord.firstChild;
 
+    if (document.querySelector('#game.over')){
+        return;
+    }
+
     console.log({key,expected});
 
     if (!window.timer && isLetter) {
