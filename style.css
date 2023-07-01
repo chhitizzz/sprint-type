@@ -125,3 +125,7 @@ div.word {
 #game:focus #cursor{
     display: block;
 }
+
+#game.over #words{
+    opacity: .5;
+}
