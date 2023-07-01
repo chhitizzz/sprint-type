@@ -28,6 +28,7 @@ function newGame() {
     }
     addClass(document.querySelector('.word'), 'current');
     addClass(document.querySelector('.letter'), 'current');
+    document.getElementById('info').innerHTML = (gameTime / 1000) + '';
     window.timer = null;
 }
 
