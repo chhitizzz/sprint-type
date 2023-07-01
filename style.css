@@ -126,12 +126,9 @@ div.word {
     display: block;
 }
 
-#game.over {
-    filter: blur(0px);
-}
-
 #game.over #words{
     opacity: .5;
+    filter: blur(0px);
 }
 
 #game.over:focus #cursor {
