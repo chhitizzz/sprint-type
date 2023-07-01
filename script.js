@@ -50,8 +50,8 @@ function getWpm(){
 function gameOver() {
     clearInterval(window.timer);
     addClass(document.getElementById('game'), 'over');
+    const result = getWpm();
     document.getElementById('info').innerHTML = `WPM: ${getWpm()}`;
-
 }
 
 document.getElementById('game').addEventListener('keyup', ev => {
@@ -82,6 +82,7 @@ document.getElementById('game').addEventListener('keyup', ev => {
             
             if (sLeft <= 0) {
                 gameOver();
+                return;
             }
 
             document.getElementById('info').innerHTML = sLeft + '';
