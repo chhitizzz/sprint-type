@@ -31,9 +31,16 @@ function newGame() {
     window.timer = null;
 }
 
+function getWpm(){
+    const words = [...document.querySelectorAll('.word')];
+    return 23;
+}
+
 function gameOver() {
     clearInterval(window.timer);
     addClass(document.getElementById('game'), 'over');
+    document.getElementById('info').innerHTML = `WPM: ${getWpm()}`;
+
 }
 
 document.getElementById('game').addEventListener('keyup', ev => {
