@@ -36,6 +36,14 @@ function getWpm(){
     const lastTypedWord = document.querySelector('.word.current');
     const lastTypedWordIndex = words.indexOf(lastTypedWord);
     const typedWords = words.slice(0, lastTypedWordIndex);
+
+    const correctWords = typedWords.filter(word => {
+        const letters = [...word.children];
+        const incorrectLetters = letters.filter(letter => letter.className.includes('incorrect'));
+        const correctLetters = letters.filter(letter => letter.className.includes('correct'));
+        return incorrectLetters.length === 0 && correctLetters.length ===letters.length;
+    });
+    
     return 23;
 }
 
