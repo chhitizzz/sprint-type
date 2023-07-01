@@ -33,6 +33,7 @@ function newGame() {
 
 function gameOver() {
     clearInterval(window.timer);
+    addClass(document.getElementById('game'), 'over');
 }
 
 document.getElementById('game').addEventListener('keyup', ev => {
