@@ -43,3 +43,13 @@ This is a simple web-based speed typing game created using HTML, CSS, and JavaSc
   The CSS styles are defined in the style.css file. Feel free to customize the styles according to your preferences.
   
   The JavaScript code responsible for game logic can be customized in the script.js file. You can modify the time limit, add additional features, or adjust the scoring mechanism if desired.
+
+# Screenshots 
+
+<img width="960" alt="1" src="https://github.com/chhitizzz/sprint-type/assets/137091888/659aef5b-fe67-4756-807f-0ed9dcb1ae81" > 
+
+<img width="960" alt="2" src="https://github.com/chhitizzz/sprint-type/assets/137091888/7fe28cd2-ad77-46ab-bdf9-c2b40ff64f05">
+
+<img width="960" alt="3" src="https://github.com/chhitizzz/sprint-type/assets/137091888/c06eb1f4-d414-42d3-ab7d-dfb28749d4d8">
+
+<img width="960" alt="4" src="https://github.com/chhitizzz/sprint-type/assets/137091888/ac43a96d-6266-40ad-9f8a-b487dbc8f955">
